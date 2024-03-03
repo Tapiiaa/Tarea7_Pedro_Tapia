@@ -41,6 +41,20 @@ public class Cliente {
 
         System.out.println("Introduce el nombre del cliente: ");
         String nombre = scanner.nextLine();
+        System.out.println("Introduce que te gusta leer (género):");
+        String genero = scanner.nextLine();
+        if(genero.equals("Terror")) {
+            //Recomendar titulos de libros de terror
+            System.out.println("Te recomendamos estos libros de terror: ");
+            System.out.println("1. El resplandor");
+            System.out.println("2. It");
+        }
+        if(genero.equals("Romántico")) {
+            //Recomendar titulos de libros románticos
+            System.out.println("Te recomendamos estos libros románticos: ");
+            System.out.println("1. Orgullo y prejuicio");
+            System.out.println("2. Cumbres borrascosas");
+        }
         Cliente cliente = new Cliente(nombre, clientes.size() + 1);
         System.out.println("Cliente creado:");
         clientes.add(cliente);
