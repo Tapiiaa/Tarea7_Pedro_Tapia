@@ -1,0 +1,23 @@
+@startuml
+
+class Cliente {
+  - nombre : String
+  - id : int
+  + Cliente(nombre : String, id : int)
+  + getNombre() : String
+  + setNombre(nombre : String) : void
+  + getId() : int
+  + setId(id : int) : void
+  + toString() : String
+  + crearCliente() : void
+  + mostrarClientes() : void
+}
+
+class Menu {
+  + main(args : String[]) : void
+  + menu() : void
+}
+
+Menu --> Cliente : creates/uses
+
+@enduml

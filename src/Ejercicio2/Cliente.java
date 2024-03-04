@@ -99,25 +99,25 @@ public class Cliente {
         }
     }
 
-        public void menu() {
+    public void menu() {
         int opcion;
-            System.out.println("Menu");
-            System.out.println("1. Crear cliente");
-            System.out.println("2. Mostrar clientes");
-            System.out.println("3. Salir");
-            System.out.println("Introduce una opción: ");
-            opcion = scanner.nextInt();
-            if(opcion < 1 || opcion > 3) {
-                System.out.println("Opción no válida");
-            }
-                opcionesMenu(opcion);
+        System.out.println("Menu");
+        System.out.println("1. Crear cliente");
+        System.out.println("2. Mostrar clientes");
+        System.out.println("3. Salir");
+        System.out.println("Introduce una opción: ");
+        opcion = scanner.nextInt();
+        if(opcion < 1 || opcion > 3) {
+            System.out.println("Opción no válida");
         }
-        //Método para mostrar los clientes
-        public static void mostrarClientes() {
-            for (Cliente cliente : clientes) {
-                System.out.println(cliente);
-            }
+        opcionesMenu(opcion);
+    }
+    //Método para mostrar los clientes
+    public static void mostrarClientes() {
+        for (Cliente cliente : clientes) {
+            System.out.println(cliente);
         }
+    }
     }
 
 

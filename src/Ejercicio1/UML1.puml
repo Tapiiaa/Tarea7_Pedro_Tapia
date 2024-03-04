@@ -1,0 +1,21 @@
+@startuml
+
+class Dado {
+  - caras : int
+  - ultimaCara : int
+  + Dado()
+  + Dado(caras : int)
+  + getCaras() : int
+  + getUltimaCara() : int
+  + setCaras(caras : int) : void
+  + tirarDado() : int
+}
+
+class Juego {
+  + main(args : String[]) : void
+}
+
+Juego ..> Dado : uses
+
+@enduml
+

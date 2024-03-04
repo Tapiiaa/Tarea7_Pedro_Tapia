@@ -1,0 +1,20 @@
+@startuml
+
+class CuadriculaJuego {
+  - tablero : int[][]
+  + CuadriculaJuego()
+  + inicializarTablero() : void
+  + insertarBarco(fila : int, columna : int) : void
+  + disparar(fila : int, columna : int) : boolean
+  + imprimirTablero() : void
+}
+
+class JuegoBarcos {
+  - sc : Scanner
+  + jugar() : void
+  + main(args : String[]) : void
+}
+
+JuegoBarcos ..> CuadriculaJuego : uses
+
+@enduml
