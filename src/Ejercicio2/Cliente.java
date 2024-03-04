@@ -43,17 +43,36 @@ public class Cliente {
         String nombre = scanner.nextLine();
         System.out.println("Introduce que te gusta leer (género):");
         String genero = scanner.nextLine();
-        if(genero.equals("Terror")) {
+        if(genero.equals("Terror") || genero.equals("terror") || genero.equals("TERROR")){
             //Recomendar titulos de libros de terror
             System.out.println("Te recomendamos estos libros de terror: ");
             System.out.println("1. El resplandor");
             System.out.println("2. It");
         }
-        if(genero.equals("Romántico")) {
+        //Si el genero es igual a "Romantico", "Romántico" o "romántico"
+        if(genero.equals("Romantico" ) || genero.equals("Romántico") || genero.equals("romántico")){
             //Recomendar titulos de libros románticos
             System.out.println("Te recomendamos estos libros románticos: ");
             System.out.println("1. Orgullo y prejuicio");
             System.out.println("2. Cumbres borrascosas");
+        }
+        if(genero.equals("Fantasia") || genero.equals("fantasia") || genero.equals("FANTASIA")){
+            //Recomendar titulos de libros de fantasía
+            System.out.println("Te recomendamos estos libros de fantasía: ");
+            System.out.println("1. El señor de los anillos");
+            System.out.println("2. Harry Potter");
+        }
+        if(genero.equals("Ciencia Ficción") || genero.equals("ciencia ficción") || genero.equals("CIENCIA FICCIÓN")){
+            //Recomendar titulos de libros de ciencia ficción
+            System.out.println("Te recomendamos estos libros de ciencia ficción: ");
+            System.out.println("1. Dune");
+            System.out.println("2. Fundación");
+        }
+        if(genero.equals("Aventuras") || genero.equals("aventuras") || genero.equals("AVENTURAS")){
+            //Recomendar titulos de libros de aventuras
+            System.out.println("Te recomendamos estos libros de aventuras: ");
+            System.out.println("1. La isla del tesoro");
+            System.out.println("2. Las aventuras de Tom Sawyer");
         }
         Cliente cliente = new Cliente(nombre, clientes.size() + 1);
         System.out.println("Cliente creado:");
