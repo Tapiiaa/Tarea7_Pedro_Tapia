@@ -2,6 +2,9 @@ Tarea 7 Técnicas de Programación
 Realizada por Pedro Alonso Tapia Lobo
 Fecha de entrega: 04/03/2024
 
+# Link a mi repositorio:
+https://github.com/Tapiiaa/Tarea7_Pedro_Tapia.git
+
 # Ejercicio 1:
 ## Enunciado: 
 Crear una clase avanzada para simular dados que, además de las funcionalidades básicas, incluya inteligencia artificial para predecir la probabilidad de futuros lanzamientos basada en los resultados anteriores. Implementar un algoritmo que utilice esta clase para realizar simulaciones complejas.
